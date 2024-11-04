@@ -3,52 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Personal Introduction</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #f0f7f4;
+            color: #2e4c39;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #8dc88a;
             padding: 20px;
             text-align: center;
             color: white;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
         }
         nav {
-            text-align: center;
-            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            background-color: #6fa26e;
+            padding: 10px 0;
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
+            color: white;
             text-decoration: none;
-            color: #4CAF50;
             font-size: 18px;
         }
-        .content {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #d8e9d5;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #2e4c39;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #8dc88a;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero img {
+            max-width: 300px;
+            border-radius: 15px;
         }
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #4CAF50;
+            padding: 20px;
+            background-color: #6fa26e;
             color: white;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    Welcome to My Personal Website
+    Welcome to My World
 </header>
 
 <nav>
@@ -57,30 +85,17 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<div class="content">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm [lee123], a web enthusiast with a passion for creating and sharing innovative projects. Welcome to my space where I share my journey, projects, and insights.(这个是我的个人web主要用于灵感的记录与分享，欢迎来到Lee的个人网站)</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here you can find a selection of my favorite projects:</p>
-        <ul>
-            <li>Project 1 - <em>Brief description</em></li>
-            <li>Project 2 - <em>Brief description</em></li>
-            <li>Project 3 - <em>Brief description</em></li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me at <a href="357499926@qq.com">your.email@example.com</a></p>
-    </section>
+<div class="hero">
+    <div class="hero-text">
+        <h1>Discover My Journey</h1>
+        <p>Welcome! I’ve created this space to share my skills, interests, and experiences. Explore my work and learn more about my journey.</p>
+        <button>Get Started</button>
+    </div>
+    <img src="https://via.placeholder.com/300x300.png?text=Your+Image+Here" alt="Hero Image">
 </div>
 
 <footer>
-    &copy; 2024 [Lee1]. All Rights Reserved.
+    &copy; 2024 [lee]. All Rights Reserved.
 </footer>
 
 </body>
