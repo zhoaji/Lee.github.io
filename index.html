@@ -3,114 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repository Page Demo</title>
+    <title>Modern Webpage Demo</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f6f8fa;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0;
         }
-        .header {
+        .navbar {
+            background-color: #333;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
-            background-color: #24292e;
-            color: #ffffff;
+            padding: 10px 20px;
+            color: white;
         }
-        .header .title {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .content {
-            max-width: 1200px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .nav a {
-            color: #0366d6;
+        .navbar a {
+            color: white;
             text-decoration: none;
-            margin-right: 15px;
-            font-size: 16px;
+            margin-left: 20px;
         }
-        .repo-info {
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel img {
+            width: 100%;
+            display: block;
+        }
+        .carousel .controls {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            right: 10px;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
         }
-        .repo-info div {
-            margin-right: 20px;
-        }
-        .file-list {
-            border-top: 1px solid #e1e4e8;
-            border-bottom: 1px solid #e1e4e8;
-            padding: 10px 0;
-        }
-        .file-list div {
+        .card-container {
             display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #e1e4e8;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
         }
-        .file-list div:last-child {
-            border-bottom: none;
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 15px;
+            overflow: hidden;
         }
-        footer {
-            text-align: center;
-            margin-top: 30px;
+        .card img {
+            width: 100%;
+        }
+        .card-content {
             padding: 15px;
-            background-color: #24292e;
-            color: #ffffff;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <div class="title">My Repository</div>
-    <div class="actions">
-        <button style="background-color: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Star</button>
-        <button style="background-color: #0366d6; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Fork</button>
+<div class="navbar">
+    <div class="logo">My Website</div>
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
     </div>
 </div>
 
-<div class="content">
-    <div class="nav">
-        <a href="#">Code</a>
-        <a href="#">Issues</a>
-        <a href="#">Pull requests</a>
-        <a href="#">Actions</a>
-        <a href="#">Projects</a>
-        <a href="#">Security</a>
-    </div>
-    
-    <div class="repo-info">
-        <div><strong>Main</strong></div>
-        <div>18 branches</div>
-        <div>Tags</div>
-    </div>
-
-    <div class="file-list">
-        <div><span>.github/</span> <span>6 months ago</span></div>
-        <div><span>.vscode/</span> <span>9 months ago</span></div>
-        <div><span>backend/</span> <span>2 weeks ago</span></div>
-        <div><span>frontend/</span> <span>2 weeks ago</span></div>
-        <div><span>README.md</span> <span>5 days ago</span></div>
+<div class="carousel">
+    <img src="https://via.placeholder.com/1200x400" alt="Banner">
+    <div class="controls">
+        <button>&lt;</button>
+        <button>&gt;</button>
     </div>
 </div>
 
-<footer>
-    &copy; 2024 My Repository. All Rights Reserved.
-</footer>
+<div class="card-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Card Image">
+        <div class="card-content">
+            <h3>Card Title 1</h3>
+            <p>Short description of the content shown in this card.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Card Image">
+        <div class="card-content">
+            <h3>Card Title 2</h3>
+            <p>Short description of the content shown in this card.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Card Image">
+        <div class="card-content">
+            <h3>Card Title 3</h3>
+            <p>Short description of the content shown in this card.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2024 My Website. All rights reserved.
+</div>
 
 </body>
 </html>
