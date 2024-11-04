@@ -3,99 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Introduction</title>
+    <title>Repository Page Demo</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f6f8fa;
             margin: 0;
             padding: 0;
-            background-color: #f0f7f4;
-            color: #2e4c39;
         }
-        header {
-            background-color: #8dc88a;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 28px;
+            background-color: #24292e;
+            color: #ffffff;
+        }
+        .header .title {
+            font-size: 24px;
             font-weight: bold;
         }
-        nav {
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav {
             display: flex;
-            justify-content: center;
-            background-color: #6fa26e;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            color: #0366d6;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+        .repo-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .repo-info div {
+            margin-right: 20px;
+        }
+        .file-list {
+            border-top: 1px solid #e1e4e8;
+            border-bottom: 1px solid #e1e4e8;
             padding: 10px 0;
         }
-        nav a {
-            margin: 0 20px;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .hero {
+        .file-list div {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 50px;
-            background-color: #d8e9d5;
+            padding: 10px 0;
+            border-bottom: 1px solid #e1e4e8;
         }
-        .hero-text {
-            max-width: 50%;
-        }
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #2e4c39;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        .hero button {
-            background-color: #8dc88a;
-            border: none;
-            padding: 15px 30px;
-            color: white;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .hero img {
-            max-width: 300px;
-            border-radius: 15px;
+        .file-list div:last-child {
+            border-bottom: none;
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background-color: #6fa26e;
-            color: white;
             margin-top: 30px;
+            padding: 15px;
+            background-color: #24292e;
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
 
-<header>
-    Welcome to My World
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="hero">
-    <div class="hero-text">
-        <h1>Discover My Journey</h1>
-        <p>Welcome! I’ve created this space to share my skills, interests, and experiences. Explore my work and learn more about my journey.</p>
-        <button>Get Started</button>
+<div class="header">
+    <div class="title">My Repository</div>
+    <div class="actions">
+        <button style="background-color: #28a745; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Star</button>
+        <button style="background-color: #0366d6; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Fork</button>
     </div>
-    <img src="https://via.placeholder.com/300x300.png?text=Your+Image+Here" alt="Hero Image">
+</div>
+
+<div class="content">
+    <div class="nav">
+        <a href="#">Code</a>
+        <a href="#">Issues</a>
+        <a href="#">Pull requests</a>
+        <a href="#">Actions</a>
+        <a href="#">Projects</a>
+        <a href="#">Security</a>
+    </div>
+    
+    <div class="repo-info">
+        <div><strong>Main</strong></div>
+        <div>18 branches</div>
+        <div>Tags</div>
+    </div>
+
+    <div class="file-list">
+        <div><span>.github/</span> <span>6 months ago</span></div>
+        <div><span>.vscode/</span> <span>9 months ago</span></div>
+        <div><span>backend/</span> <span>2 weeks ago</span></div>
+        <div><span>frontend/</span> <span>2 weeks ago</span></div>
+        <div><span>README.md</span> <span>5 days ago</span></div>
+    </div>
 </div>
 
 <footer>
-    &copy; 2024 [lee]. All Rights Reserved.
+    &copy; 2024 My Repository. All Rights Reserved.
 </footer>
 
 </body>
